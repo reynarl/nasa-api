@@ -1,33 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
+// components
+import SearchForm from './Components/SearchForm'
 
-function App() {
-  const [count, setCount] = useState(0)
+function App () {
+  const apiKey = 'ezyLTqqACoDH1MPNw77L2TNzdh5atbqhowVABtvj'
+  const url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    <>
+      <header className='m-4 text-center'>
+        <div className='container-background'>
+          <img src='https://c.tenor.com/qtDdKvNo6bAAAAAC/galaxy-space.gif' alt='background' />
+          <h1 className='title'>NASA Astronomy Picture of the Day</h1>
+        </div>
+        <p><strong>Desarrollado por: </strong>Reyna del Carmen</p>
+        <p>API: <a href={url} target='blank'>https://api.nasa.gov/planetary/apod</a></p>
+      </header>
+      <section className='m-4'><SearchForm url={url} /></section>
+    </>
   )
 }
 
