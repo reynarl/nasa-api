@@ -1,0 +1,37 @@
+h3{
+  text-shadow: 5px 5px 15px rgb(94, 43, 177);
+  color: rgb(195, 149, 255);
+}
+
+.card-group{
+  margin: auto;
+  width: 90%;
+  /* color: black; */
+}
+
+.card-pictures{
+  background-color: black;
+  box-shadow: 0 0px 36px rgba(61, 125, 221, 0.527);
+}
+
+.errorMsg{
+  color: white;
+  margin: auto;
+  width: 100%;
+  background-color: black;
+}
+
+.text-explanation{
+  text-align: justify;
+  font-size: 18px;
+}
+
+.text-date{
+  color: gray;
+  font-size: 18px;
+}
+
+img{
+  border-radius: 10px;
+}
+

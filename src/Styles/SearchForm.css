@@ -1,0 +1,22 @@
+form{
+  margin: 90px 0 50px;
+}
+
+h5{
+  color: rgb(199, 198, 196);
+  text-align: center;
+}
+
+input{
+  width: 200px;
+  height: 40px;
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
