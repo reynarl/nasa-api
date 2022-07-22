@@ -6,7 +6,7 @@ const PicturesApi = ({ pictures }) => {
       <div className='card-group card mb-3 text-center'>
         {
           pictures.length === 0
-            ? <p className='errorMsg'>No existen resultados para esa fecha</p>
+            ? <p className='errorMsg'>⚠️ No existen resultados para esa fecha</p>
             : (
               <div className='card-pictures card-body'>
                 <h3 className='card-title'>{pictures.title}</h3>
